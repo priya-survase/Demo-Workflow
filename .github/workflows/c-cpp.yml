@@ -20,7 +20,7 @@ jobs:
       with:
         compiler: gcc 6.3
     - name: Change wrapper permissions
-      run: chmod +x ./hello.c
+      run: chmod -o ./hello.c
     - name: configure
       run: ./hello.c
     - name: make
