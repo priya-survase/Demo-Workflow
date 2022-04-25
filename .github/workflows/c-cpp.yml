@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Thanks for the commit'
+        pr-message: 'Your PR will be checked soon!'
     - name: configure
       run: ./hello.c
     - name: make
