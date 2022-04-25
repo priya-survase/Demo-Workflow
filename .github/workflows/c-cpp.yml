@@ -20,7 +20,7 @@ jobs:
         issue-message: 'Thanks for the commit'
         pr-message: 'Your PR will be checked soon!'
     - name: configure
-      run: ./hello.c
+      run: hello.c
     - name: make
       run: make
     - name: make check
