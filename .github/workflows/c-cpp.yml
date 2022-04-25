@@ -15,12 +15,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup C/C++ Compiler
-      uses: rlalik/setup-cpp-compiler@v1.1
-      with:
-        compiler: g++
+#     - name: Setup C/C++ Compiler
+#       uses: rlalik/setup-cpp-compiler@v1.1
+#       with:
+#         compiler: g++
+    - name: Change wrapper permissions
+      run: chmod +x ./hello.c
     - name: configure
-      run: ./configure
+      run: ./hello.c
     - name: make
       run: make
     - name: make check
