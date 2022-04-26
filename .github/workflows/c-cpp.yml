@@ -13,8 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: configure
+    - name: configure access
       run: chmod +x configure
+    - name: configure
       run: ./configure
     - name: make
       run: make
