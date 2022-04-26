@@ -2,7 +2,7 @@
 
 int main()
 {
-  printf("Hello, World!");
-  printf("Hii");
+  int a=10; int b=5;
+  printf("%d", a/b);
   return 0;
 }
