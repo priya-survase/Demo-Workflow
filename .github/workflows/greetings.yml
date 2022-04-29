@@ -13,4 +13,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Hi! Your issue will be resolved in 24hrs.'
-        pr-message: 'Message that will be displayed on users first pull request'
+        pr-message: 'Hi! Your Pull request will be assessed soon. Thank you!'
